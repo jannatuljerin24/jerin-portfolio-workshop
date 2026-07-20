@@ -8,24 +8,15 @@ app.use(cors());
 app.use(express.json());
 
 const projects = [
- {
-   id: 1,
-   title: "Portfolio Website",
-   description: "A personal portfolio built with React and Express.",
-   tech: ["React", "Express", "CSS"],
-   github: "https://github.com/yourusername/portfolio",
-   demo: "https://your-demo-link.com"
- },
- {
-   id: 2,
-   title: "Weather App",
-   description: "A simple weather application using API integration.",
-   tech: ["React", "API", "JavaScript"],
-   github: "https://github.com/yourusername/weather-app",
-   demo: "https://your-weather-demo.com"
- }
+  {
+    id: 1,
+    title: "Personal Portfolio",
+    description: "A responsive portfolio website built using React and Express.",
+    tech: ["React", "Express", "CSS"],
+    github: "https://github.com/jannatuljerin24/jerin-portfolio-workshop",
+    demo: "https://your-vercel-url.vercel.app"
+  }
 ];
-
 app.get("/", (req, res) => {
  res.send("Portfolio API is running");
 });
